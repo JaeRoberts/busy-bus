@@ -213,21 +213,69 @@ span {
 }
 
 .direction-east {
-  position: relative;
-  width: 59%;
   display: block;
+  height: 25px;
+  width: 108px;
+  background-color: #6957EA;
+  border-radius: 3px;
 }
 
-.direction-north {
-  position: relative;
-  width: 60%;
-  display: block;
+.east-icon {
+  float: left position: relative;
+  width: 15%;
+  display: inline-block;
+  padding: 7% 0% 0% 4%;
+}
+
+.eastbound {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 4%;
 }
 
 .direction-south {
-  position: relative;
-  width: 65%;
   display: block;
+  height: 25px;
+  width: 115px;
+  background-color: #ED41C2;
+  border-radius: 3px;
+}
+
+.south-icon {
+  float: left position: relative;
+  width: 13%;
+  display: inline-block;
+  padding: 5% 0% 0% 4%;
+}
+
+.southbound {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding: 0% 0% 7% 4%;
+}
+
+.direction-north {
+  display: block;
+  height: 25px;
+  width: 113px;
+  background-color: #9F4CE9;
+  border-radius: 3px;
+}
+
+.north-icon {
+  float: left position: relative;
+  width: 13%;
+  display: inline-block;
+  padding: 5% 0% 0% 4%;
+}
+
+.northbound {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding: 0% 0% 7% 4%;
 }
 
 .heart {
@@ -236,7 +284,6 @@ span {
   display: inline-block;
   padding: 5% 0% 0% 3%;
 }
-
 
 .time {
   float: right;
@@ -295,6 +342,7 @@ span {
 }
 
 #navigation {
+  position: static;
   height: 64px;
   background-color: #000000;
 }

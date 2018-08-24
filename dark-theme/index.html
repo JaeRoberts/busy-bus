@@ -1,215 +1,248 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Busy Bus</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <section class="container">
-  <section class="fixed">
-    <header>
-    <!--Status Bar-->
-    <article>
-    <div id="status">
-      <div id="status-icons" align="right">
-      <img src="/icons/status-bar-contents.png">
-    </div>
-    </div>
-    </article>
-    <!--Search Bar-->
-    <article>
-    <div class="clear">
-      <div id="search-bar">
-        <img class="search-icon"src="/icons/search-icon.png">
-        <h3 id="hint">Search</h3>
-        <img id="mic-icon" src="/icons/mic-icon.png">
-      </div>
-    </div>
-    </article>
-  </header>
-    <main>
-    <!--Stop Name-->
-    <article id="location">
-        <div class="clear">
-        <div id="stop-name">
-          <img id="location-icon" src="/icons/location-icon.png">
-          <span id="title">Washington & State</span>
-        </div>
-      </div>
-    </article>
-      <!--Page Name-->
-    <article id="page-title">
-        <div class="clear">
-          <h2 id="main-heading">Upcoming Arrivals</h2>
-      </div>
-    </article>
-      </section>
+    <section class="fixed">
+      <header>
+        <!--Status Bar-->
+        <article>
+          <div id="status">
+            <div id="status-icons" align="right">
+              <img src="../icons/status-bar-contents.png" alt="stats bar contents">
+            </div>
+          </div>
+        </article>
+        <!--Search Bar-->
+        <article>
+          <div class="clear">
+            <div id="search-bar">
+              <img class="search-icon" src="../icons/search-icon.png" alt="search icon">
+              <h3 id="hint">Search</h3>
+              <img id="mic-icon" src="../icons/mic-icon.png" alt="mic icon">
+            </div>
+          </div>
+        </article>
+      </header>
+      <main>
+        <!--Stop Name-->
+        <article id="location">
+          <div class="clear">
+            <div id="stop-name">
+              <img id="location-icon" src="../icons/location-icon.png" alt="location icon">
+              <span id="title">Washington & State</span>
+            </div>
+          </div>
+        </article>
+        <!--Page Name-->
+        <article id="page-title">
+          <div class="clear">
+            <h2 id="main-heading">Upcoming Arrivals</h2>
+          </div>
+        </article>
+    </section>
     <!--Upcoming Buses Section Start-->
-    <section class="upcoming-buses">
+    <ul class="upcoming-buses">
       <!--Bus One-->
-      <article>
-      <div class="clear">
-      <div class="bus-style-one">
-        <img id="starting-point" src="/icons/upcoming-starter-point.png">
-        <div class="route-number-plus">
-          <h1>124</h1>
+      <li>
+        <div class="clear">
+          <div class="bus-style-one">
+            <img id="starting-point" src="../icons/upcoming-starter-point.png" alt="starting point icon">
+            <div class="route-number-plus">
+              <h1>124</h1>
+            </div>
+            <div class="route">
+              <span class="route-name">navy pier</span>
+              <div class="clear">
+                <div class="direction-east">
+                  <img class="east-icon" src="../icons/arrow-right.png" alt="arrow pointing right">
+                  <span class="eastbound">Eastbound</span>
+                </div>
+              </div>
+            </div>
+            <img class="heart" src="../icons/heart-icon.png" alt="heart icon">
+            <div class="time">
+              <h2 class="numeral-count">10</h2>
+              <span class="minutes">minutes</span>
+            </div>
+          </div>
         </div>
-        <div class="route">
-          <span class="route-name">navy pier</span>
-          <img class="direction-east" src="/icons/eastbound.png">
-      </div>
-        <img class="heart" src="/icons/heart-icon.png">
-        <div class="time">
-          <h2 class="numeral-count">10</h2>
-          <span class="minutes">minutes</span>
+      </li>
+      <!--Bus Two-->
+      <li>
+        <div class="clear">
+          <div class="bus-style-two">
+            <img class="following-points" src="../icons/southbound-point.png" alt="">
+            <div class="route-number-plus">
+              <h1>J14</h1>
+            </div>
+            <div class="route">
+              <span class="route-name">103rd/stony island</span>
+              <div class="clear">
+                <div class="direction-south">
+                  <img class="south-icon" src="../icons/arrow-down.png" alt="arrow pointing down">
+                  <span class="southbound">Southbound</span>
+                </div>
+              </div>
+            </div>
+            <div class="time">
+              <h2 class="numeral-count">15</h2>
+              <span class="minutes">minutes</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </article>
-    <!--Bus Two-->
-    <article>
-    <div class="clear">
-    <div class="bus-style-two">
-      <img class="following-points" src="/icons/southbound-point.png">
-      <div class="route-number-plus">
-        <h1>J14</h1>
-      </div>
-      <div class="route">
-        <span class="route-name">103rd/stony island</span>
-        <img class="direction-south" src="/icons/southbound.png">
-    </div>
-      <div class="time">
-        <h2 class="numeral-count">15</h2>
-        <span class="minutes">minutes</span>
-      </div>
-    </div>
-    </div>
-    </article>
-    <!--Bus Three-->
-    <article>
-    <div class="clear">
-    <div class="bus-style-one">
-      <img class="following-points" src="/icons/northbound-point.png">
-      <div class="route-number-plus">
-        <h1>151</h1>
-      </div>
-      <div class="route">
-        <span class="route-name">devon/clark</span>
-        <img class="direction-north" src="/icons/northbound.png">
-    </div>
-      <div class="time">
-        <h2 class="numeral-count">16</h2>
-        <span class="minutes">minutes</span>
-      </div>
-    </div>
-  </div>
-  </article>
-  <!--Bus Four-->
-  <article>
-  <div class="clear">
-  <div class="bus-style-two">
-    <img class="following-points" src="/icons/eastbound-point.png">
-    <div id="route-number-single">
-      <h1>60</h1>
-    </div>
-    <div class="route">
-      <span class="route-name">randolph/harbor dr.</span>
-      <img class="direction-east" src="/icons/eastbound.png">
-  </div>
-    <div class="time">
-      <h2 class="numeral-count">20</h2>
-      <span class="minutes">minutes</span>
-    </div>
-  </div>
-</div>
-</article>
-<!--Bus Five-->
-<article>
-<div class="clear">
-<div class="bus-style-one">
-  <img class="following-points" src="/icons/eastbound-point.png">
-  <div class="route-number-plus">
-    <h1>124</h1>
-  </div>
-  <div class="route">
-    <span class="route-name">navy pier</span>
-    <img class="direction-south" src="/icons/southbound.png">
-</div>
-  <img class="heart" src="/icons/heart-icon.png">
-  <div class="time">
-    <h2 class="numeral-count">20</h2>
-    <span class="minutes">minutes</span>
-  </div>
-</div>
-</div>
-</article>
-<!--Bus Six-->
-<article>
-<div class="clear">
-<div class="bus-style-two">
-  <img class="following-points" src="/icons/eastbound-point.png">
-  <div class="route-number-plus">
-    <h1>124</h1>
-  </div>
-  <div class="route">
-    <span class="route-name">navy pier</span>
-    <img class="direction-east" src="/icons/eastbound.png">
-</div>
-  <img class="heart" src="/icons/heart-icon.png">
-  <div class="time">
-    <h2 class="numeral-count">20</h2>
-    <span class="minutes">minutes</span>
-  </div>
-</div>
-</div>
-</article>
-</section>
+      </li>
+      <!--Bus Three-->
+      <li>
+        <div class="clear">
+          <div class="bus-style-one">
+            <img class="following-points" src="../icons/northbound-point.png" alt="">
+            <div class="route-number-plus">
+              <h1>151</h1>
+            </div>
+            <div class="route">
+              <span class="route-name">devon/clark</span>
+              <div class="clear">
+                <div class="direction-north">
+                  <img class="north-icon" src="../icons/arrow-up.png" alt="arrow pointing up">
+                  <span class="southbound">Northbound</span>
+                </div>
+              </div>
+            </div>
+            <div class="time">
+              <h2 class="numeral-count">16</h2>
+              <span class="minutes">minutes</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--Bus Four-->
+      <li>
+        <div class="clear">
+          <div class="bus-style-two">
+            <img class="following-points" src="../icons/eastbound-point.png" alt="">
+            <div id="route-number-single">
+              <h1>60</h1>
+            </div>
+            <div class="route">
+              <span class="route-name">randolph/harbor dr.</span>
+              <div class="clear">
+                <div class="direction-east">
+                  <img class="east-icon" src="../icons/arrow-right.png" alt="arrow pointing right">
+                  <span class="eastbound">Eastbound</span>
+                </div>
+              </div>
+            </div>
+            <div class="time">
+              <h2 class="numeral-count">20</h2>
+              <span class="minutes">minutes</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--Bus Five-->
+      <li>
+        <div class="clear">
+          <div class="bus-style-one">
+            <img class="following-points" src="../icons/eastbound-point.png" alt="">
+            <div class="route-number-plus">
+              <h1>124</h1>
+            </div>
+            <div class="route">
+              <span class="route-name">navy pier</span>
+              <div class="clear">
+                <div class="direction-south">
+                  <img class="south-icon" src="../icons/arrow-down.png" alt="arrow pointing down">
+                  <span class="southbound">Southbound</span>
+                </div>
+              </div>
+            </div>
+            <img class="heart" src="../icons/heart-icon.png" alt="heart icon">
+            <div class="time">
+              <h2 class="numeral-count">20</h2>
+              <span class="minutes">minutes</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--Bus Six-->
+      <li>
+        <div class="clear">
+          <div class="bus-style-two">
+            <img class="following-points" src="../icons/eastbound-point.png" alt="">
+            <div class="route-number-plus">
+              <h1>124</h1>
+            </div>
+            <div class="route">
+              <span class="route-name">navy pier</span>
+              <div class="clear">
+                <div class="direction-east">
+                  <img class="east-icon" src="../icons/arrow-right.png" alt="arrow pointing right">
+                  <span class="eastbound">Eastbound</span>
+                </div>
+              </div>
+            </div>
+            <img class="heart" src="../icons/heart-icon.png" alt="heart icon">
+            <div class="time">
+              <h2 class="numeral-count">20</h2>
+              <span class="minutes">minutes</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
     <!--Upcoming Buses Section End-->
 
     <!--Schedule Button-->
     <section id="full-schedule">
-      <div ="clear">
-      <div id="fs-button">
-        <img id="schedule-line" src="/icons/schedule-line-white.png">
-        <span id="button-text">Check out today's schedule</span>
-        <img id="arrow" src="/icons/arrow-pointed-right.png">
-      </div>
-    </div>
+      <div="clear">
+        <div id="fs-button">
+          <img id="schedule-line" src="../icons/schedule-line-white.png" alt="">
+          <span id="button-text">Check out today's schedule</span>
+          <img id="arrow" src="../icons/arrow-pointed-right.png" alt="arrow pointing right">
+        </div>
+        </div>
     </section>
     </main>
     <footer>
-    <!--Navigation-->
-    <section id="navigation">
-      <nav>
-      <div ="clear">
-      <div align="center" class="buttons">
-        <img class="button-icons" src="/icons/home.png">
-        <span class="icon-text">home</span>
-      </div>
-      <div align="center" class="buttons">
-        <img class="button-icons" src="/icons/saved-icon.png">
-        <span class="icon-text">saved</span>
-      </div>
-      <div align="center" class="buttons">
-        <img class="button-icons" src="/icons/my-account-icon.png">
-        <span class="icon-text">my account</span>
-      </div>
-      <div align="center" class="buttons">
-        <img class="button-icons" src="/icons/feedback-icon.png">
-        <span class="icon-text">feedback</span>
-      </div>
-      <div align="center" class="buttons">
-        <img class="button-icons" src="/icons/alert-icon.png">
-        <span class="icon-text">alerts</span>
-      </div>
-    </div>
-  </nav>
-    </section>
-  </footer>
+      <!--Navigation-->
+      <section id="navigation">
+        <nav>
+          <div="clear">
+            <div align="center" class="buttons">
+              <img class="button-icons" src="../icons/home.png" alt="home icon">
+              <span class="icon-text">home</span>
+            </div>
+            <div align="center" class="buttons">
+              <img class="button-icons" src="../icons/saved-icon.png" alt="saved routes icon">
+              <span class="icon-text">saved</span>
+            </div>
+            <div align="center" class="buttons">
+              <img class="button-icons" src="../icons/my-account-icon.png" alt="my account icon">
+              <span class="icon-text">my account</span>
+            </div>
+            <div align="center" class="buttons">
+              <img class="button-icons" src="../icons/feedback-icon.png" alt="feedback icon">
+              <span class="icon-text">feedback</span>
+            </div>
+            <div align="center" class="buttons">
+              <img class="button-icons" src="../icons/alert-icon.png" alt="alert icon">
+              <span class="icon-text">alerts</span>
+            </div>
+            </div>
+        </nav>
+      </section>
+    </footer>
   </section>
 </body>
+
 </html>
